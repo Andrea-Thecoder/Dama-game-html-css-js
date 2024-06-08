@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.bg-body-start {
+  background-image: url(../pic/imgsfondo2.webp);
+}
+
+.bg-body-chess {
+  background-image: url(../pic/sfondo-legno.webp);
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.turnColor {
+  color: green;
+  transform: scale(110%);
+}
+
+.containerStart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.startGiocatori {
+  width: 100%;
+  margin: 0 20px;
+  color: white;
+  background-image: url(../pic/sfondo-legno.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.startGiocatori h2 {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+.startGiocatori .giocatore {
+  padding: 10px;
+}
+.startGiocatori .giocatore img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.startGiocatori label {
+  display: block;
+  margin: 15px 0;
+  font-weight: 700;
+  text-align: center;
+}
+.startGiocatori input {
+  width: 80%;
+  display: block;
+  margin: 5px auto;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+}
+.startGiocatori button {
+  display: block;
+  width: 40%;
+  margin: 15px auto 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-weight: 700;
+}
+
+/* .startGiocatori h2 {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  text-align: center;
+} */
+/* .startGiocatori .giocatore {
+  padding: 10px;
+} */
+/* .startGiocatori .giocatore img {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+} */
+/* .startGiocatori label {
+  display: block;
+  margin: 15px 0;
+  font-weight: 700;
+  text-align: center;
+} */
+/* .startGiocatori input {
+  width: 80%;
+  display: block;
+  margin: 5px auto;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: none;
+} */
+/* .startGiocatori button {
+  display: block;
+  width: 40%;
+  margin: 15px auto 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-weight: 700;
+} */
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url(../pic/sfondo-legno.webp);
+}
+
+#timer {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+#timer p {
+  margin: 0;
+}
+
+.pedineMangiate {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 20px 0;
+}
+.pedineMangiate h3 {
+  margin: 5px 0;
+  text-align: center;
+}
+.pedineMangiate section div {
+  border: solid 2px white;
+  width: 60%;
+  height: 30px;
+  margin: 0 auto;
+}
+
+/* .pedineMangiate h3 {
+  margin: 5px 0;
+  text-align: center;
+} */
+/* .pedineMangiate section div {
+  border: solid 2px white;
+  width: 60%;
+  height: 30px;
+  margin: 0 auto;
+}
+ */
+.containerChessboard {
+  padding: 10px;
+}
+
+.chessboard {
+  width: 355px;
+  height: 355px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  background-color: white;
+}
+.chessboard .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: #000;
+}
+
+.valid {
+  background-color: rgba(125, 255, 38, 0.8);
+}
+
+.no-valid {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.vittoria {
+  padding: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.vittoria h2 {
+  text-align: center;
+}
+
+.vittoria span {
+  margin: 20px;
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.vittoria button {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-weight: 700;
+}
+
+.vittoria img {
+  width: 80px;
+  height: 80px;
+}
+
+#C-1, #C-2 {
+  display: flex;
+  gap: 0.15em;
+  padding: 0.2em;
+  background-color: rgba(255, 255, 255, 0.6156862745);
+}
+
+.deathToken {
+  display: block;
+  width: 8.3333333333%;
+  height: 100%;
+}
+
+@media screen and (min-width: 576px) {
+  .startGiocatori {
+    width: 60%;
+    margin: 0;
+  }
+  .pedineMangiate div {
+    width: 50%;
+  }
+  .containerChessboard {
+    padding: 20px;
+  }
+  .chessboard {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .startGiocatori {
+    width: 50%;
+  }
+  .chessboard {
+    width: 550px;
+    height: 550px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .startGiocatori {
+    width: 40%;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .pedineMangiate {
+    width: 150px;
+    display: flex;
+    align-items: center;
+  }
+  #uno, #due {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .pedineMangiate section {
+    width: 100%;
+  }
+  .pedineMangiate section div {
+    width: 30%;
+    height: 350px;
+  }
+  .chessboard {
+    width: 550px;
+    height: 550px;
+  }
+  #C-1 {
+    flex-direction: column;
+  }
+  #C-2 {
+    flex-direction: column-reverse;
+  }
+  .deathToken {
+    display: block;
+    width: 100%;
+    height: 8.3333333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .startGiocatori {
+    width: 30%;
+  }
+  .pedineMangiate {
+    width: 200px;
+  }
+}/*# sourceMappingURL=main.css.map */

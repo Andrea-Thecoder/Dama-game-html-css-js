@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <title>La Dama</title>
+</head>
+
+<body class="bg-body-start"> 
+  <div class="containerStart">
+    <div class="startGiocatori">
+        <h2>Nuova partita</h2>
+        <div class="giocatore">
+            <img src="./pic/PG-1.webp" alt="pedina bianca">
+            <label for="player-1">Giocatore 1</label>
+            <input type="text" placeholder="Nome" name="player-1" id="player-1">
+        </div>
+        <button type="button" id="start">Inizia Partita</button>
+        <button type="button" id="loading">Carica partita</button>
+        <div class="giocatore">
+            <input type="text" placeholder="Nome" name="player-2" id="player-2">
+            <label for="player-2">Giocatore 2</label>
+            <img src="./pic/PG-2.webp" alt="pedina nera">
+        </div>
+    </div>
+</div>
+
+
+<!-- <main>
+    <div class="wrapper">
+        <div id="timer">TIMER</div>
+        <div class="pedineMangiate uno">
+            <section>
+                <h3 id="player-one">Giocatore 1</h3>
+                <div></div>
+            </section>
+        </div>
+        <div class="containerChessboard">
+        </div>
+        <div class="pedineMangiate due">
+            <section>
+                <div></div>
+                <h3 id="player-two">Giocatore 2</h3>
+            </section>
+        </div>
+</main> -->
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
